@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 27.1.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 500 500" style="enable-background:new 0 0 500 500;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:#FFFFFF;}
+	.st1{fill:#01ADEF;}
+	.st2{fill:#A6A8AB;}
+	.st3{fill:#020202;}
+	.st4{fill:#00AEEF;}
+	.st5{fill:#EC008C;}
+	.st6{fill:#808184;}
+	.st7{fill:#64BB46;}
+	.st8{fill:#6D6E70;}
+	.st9{fill:#231F20;}
+	.st10{fill:none;stroke:#020202;stroke-width:0.25;stroke-miterlimit:10;}
+	.st11{fill:none;stroke:#01ADEF;stroke-miterlimit:10;}
+	.st12{fill:none;stroke:#000000;stroke-width:8;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
+	.st13{fill:none;stroke:#000000;stroke-width:10;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
+	.st14{fill:none;stroke:#00AEEF;stroke-width:10;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
+	.st15{fill:none;stroke:#EC008C;stroke-width:8;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
+	.st16{fill:none;stroke:#00AEEF;stroke-width:8;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
+	.st17{fill:#F8F8F8;}
+	.st18{fill:none;stroke:#EC008C;stroke-width:10;stroke-miterlimit:10;}
+
+	.st14 {
+		animation: draw 2s 
+	}
+</style>
+<path class="st14" d="M260.28,266.76h-21.58v53.31c-0.04,0.05,1.49,0.05-0.04,0.05c-14.14,0-25.58,11.44-25.58,25.58
+	c0,14.14,11.44,25.58,25.58,25.58h0.04v53.36h157.82v-96.01L260.28,266.76z"/>
+<path class="st14" d="M286.96,154.26c0,14.14-11.49,25.63-25.63,25.63v53.31h-53.31c0-14.14-11.49-25.58-25.63-25.58
+	c-14.14,0-25.58,11.44-25.58,25.58H103.5V75.37h157.83v53.31C275.47,128.68,286.96,140.12,286.96,154.26z"/>
+<path class="st14" d="M195.23,141.61c0-10.39,8.41-18.8,18.8-18.8c10.39,0,18.83,8.41,18.83,18.8"/>
+<path class="st14" d="M291.62,332.99c0-10.39,8.41-18.8,18.8-18.8c10.39,0,18.83,8.41,18.83,18.8"/>
+<path class="st14" d="M226.14,75.37L226.14,75.37c0,11.18-9.06,20.24-20.24,20.24h-68.28v30.29c0,23.71-9.05,46.52-25.29,63.78
+	l-8.84,9.39V75.37H226.14z"/>
+<path class="st14" d="M396.52,266.75v61.87l-136.25-61.87H292c0-14.14,11.49-25.58,25.63-25.58c14.09,0,25.58,11.44,25.58,25.58
+	H396.52z"/>
+</svg>
