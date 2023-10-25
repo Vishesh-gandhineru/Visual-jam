@@ -1,0 +1,13 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+body {
+    font-family: 'Montserrat', sans-serif;     
+    background-color: #e8e8e8;
+}
+button {
+    letter-spacing: 2px;
+}
+

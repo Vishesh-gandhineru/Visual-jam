@@ -1,0 +1,71 @@
+/* marquee div container */
+.marquee {
+    font-size: 18px;
+    color: #fff;
+    height: 35px;
+    overflow: hidden;
+    background-color: #ed008c;
+    position: relative;
+    text-transform:uppercase;
+    font-weight: 500;
+    padding-top: 5px;
+}
+/* nested div inside the container */
+.marquee div {
+    display: block;
+    width: 200%;
+    position: absolute; 
+    overflow: hidden;
+    animation: marquee 12s linear infinite;
+}
+/* span with text */
+.marquee span {
+    float: left;
+    width: 50%;
+}
+/* keyframe */
+@keyframes marquee {
+    0% { left: 0; }
+    100% { left: -100%; }
+}
+
+.ImageHolder {
+position: relative;
+}
+.WorkImagehover {
+    border: 0px #01adef solid ;
+    transition: all 0.2s ease-in-out;
+    position: relative;
+}
+.WorkImagehover:hover {
+    border: 15px #01adef solid ;
+    transition: all 0.2s ease-in-out;
+}
+
+.ImageHolder:before {
+    content: "View";
+    font-size: 16px;
+  position: absolute;
+  width: 120px;
+  height: 120px;
+    background: #01adef;
+    color:#fff;
+    left: 50%;
+    top:50%;
+    z-index: 5;
+    transform: translate(-50% , -50%);
+    border-radius: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 600;
+    text-transform: uppercase;
+    opacity: 0;
+       transition: all 0.2s ease-in-out;
+
+}
+
+.ImageHolder:hover::before {
+    opacity: 1;
+}
+
