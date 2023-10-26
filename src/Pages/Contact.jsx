@@ -19,6 +19,10 @@ export default function Contact() {
           </form>
         </div>
       </div>
+      <div className="bg-color-blue md:mx-[-36px] mx-[-23px] text-[white] p-7 flex justify-between items-center">
+        <h3 className="uppercase text-mob-h1">FOllow us</h3>
+        <a href="#">LINKEDIN</a>
+      </div>
     </section>
   );
 }

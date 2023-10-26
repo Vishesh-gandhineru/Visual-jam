@@ -9,7 +9,7 @@ export default {
       'content':'1250px',
     },
     colors: {
-      'color-gray': '#353f4f',
+      'color-blue': '#01adef',
       'color-pink': '#c73e9b',
       'color-subgray':"#757575",
       'color-body' : "#6c757d",

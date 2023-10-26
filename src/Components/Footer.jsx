@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 
 export default function footer() {
   return (
-    <footer>
+    <footer className="md:mx-[-36px] mx-[-23px]">
        <div className="marquee">
             <div>
               <span>
