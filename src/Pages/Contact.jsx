@@ -1,7 +1,49 @@
-
+import { useState } from "react";
 
 export default function Contact() {
  
+  const [values , setValues] = useState({});
+
+  function isFormSubmissionError(response) {
+    return response.status === "validation_failed";
+  }
+
+  const formSubmissionHandler = (event) => {
+  event.preventDefault();
+
+  const formElement = event.target,
+    { action, method } = formElement,
+    body = new FormData(formElement);
+
+  fetch(action, {
+    method,
+    body
+  })
+    .then((response) => response.json())
+    .then((response) => {
+      // Determine if the submission is not valid
+      if (isFormSubmissionError(response)) {
+        // Handle the case when there are validation errors
+        const errorMessage = response.message;
+        alert(errorMessage);
+      } else {
+        // Handle the happy path
+        window.location.reload();
+      }
+    })
+    .catch((error) => {
+      // Handle the case when there's a problem with the request
+      console.log(`There is an error ${error}`)
+    });
+};
+
+window.onload = function() {
+  const formElement = document.querySelector("form");
+  formElement.addEventListener("submit", formSubmissionHandler);  
+
+};
+  
+
   return (
     <section className="contactUs">
       <div className="my-10 flex justify-between ">
@@ -15,10 +57,10 @@ export default function Contact() {
 
         <div className="ContactForm my-10 w-1/2" action="https://react.visualjam.in/wp-json/contact-form-7/v1/contact-forms/71b8e92/feedback" method="post">
           <form className="flex flex-col gap-4 items-center md:gap-8">
-            <input type="text" name="fullName" id="name" placeholder="Your Name" className="bg-[#f8f8f8] w-full p-4 placeholder:text-[#666] font-semibold" />
-            <input type="email" name="email" id="email" placeholder="Your Email" className="bg-[#f8f8f8] w-full p-4 placeholder:text-[#666] font-semibold" />
-            <textarea name="message" id="message" placeholder="Your Message" className="bg-[#f8f8f8] w-full p-4 placeholder:text-[#666] font-semibold" />
-            <button className="bg-[black] text-[white] p-4 w-full font-semibold">Send Message</button>
+            <input type="text" name="your-name" id="your-name" placeholder="Your Name" className="bg-[#f8f8f8] w-full p-4 placeholder:text-[#666] font-semibold" />
+            <input type="email" name="your-email" id="your-email" placeholder="Your Email" className="bg-[#f8f8f8] w-full p-4 placeholder:text-[#666] font-semibold" />
+            <textarea name="your-message" id="your-message" placeholder="Your Message" className="bg-[#f8f8f8] w-full p-4 placeholder:text-[#666] font-semibold" />
+            <button type="submit" className="bg-[black] text-[white] p-4 w-full font-semibold">Send Message</button>
           </form>
         </div>
       </div>
