@@ -1,8 +1,6 @@
-import { useState } from "react";
 
 export default function Contact() {
  
-  const [values , setValues] = useState({});
 
   function isFormSubmissionError(response) {
     return response.status === "validation_failed";
