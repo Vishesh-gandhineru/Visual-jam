@@ -1,4 +1,7 @@
+
+
 export default function Contact() {
+ 
   return (
     <section className="contactUs">
       <div className="my-10 flex justify-between ">
@@ -10,7 +13,7 @@ export default function Contact() {
           </h4>
         </div>
 
-        <div className="ContactForm my-10 w-1/2">
+        <div className="ContactForm my-10 w-1/2" action="https://react.visualjam.in/wp-json/contact-form-7/v1/contact-forms/71b8e92/feedback" method="post">
           <form className="flex flex-col gap-4 items-center md:gap-8">
             <input type="text" name="fullName" id="name" placeholder="Your Name" className="bg-[#f8f8f8] w-full p-4 placeholder:text-[#666] font-semibold" />
             <input type="email" name="email" id="email" placeholder="Your Email" className="bg-[#f8f8f8] w-full p-4 placeholder:text-[#666] font-semibold" />
