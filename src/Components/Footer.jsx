@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 export default function footer() {
   return (
     <footer>
@@ -47,15 +49,15 @@ export default function footer() {
             </svg>
           </div>
         </div>
-        <div className="flex flex-col gap-8 md:flex-row md:gap-20">
+        <div className="flex flex-col gap-8 md:flex-row md:gap-24">
         <div>
             <h4 className="uppercase text-center text-mob-h4 font-semibold  mb-5 md:text-left">Our service</h4>
             <ul className="flex flex-col gap-4">
-              <li className="text-center text-[gray] hover:text-[#fff] md:text-left">CUSTOM ILLUSTRATIONS</li>
-              <li className="text-center text-[gray] hover:text-[#fff] md:text-left">BOOK COVERS</li>
-              <li className="text-center text-[gray] hover:text-[#fff] md:text-left">PHOTO COMPOSITING</li>
-              <li className="text-center text-[gray] hover:text-[#fff] md:text-left">CARICATURES</li>
-              <li className="text-center text-[gray] hover:text-[#fff] md:text-left">CUSTOM ICONS</li>
+              <Link to='/work/custom-illustrations' className="text-center text-[gray] hover:text-[#fff] md:text-left"> CUSTOM ILLUSTRATIONS</Link>
+              <Link to="/work/book-covers" className="text-center text-[gray] hover:text-[#fff] md:text-left">   BOOK COVERS</Link>
+              <Link to="/work/compositing" className="text-center text-[gray] hover:text-[#fff] md:text-left">   PHOTO COMPOSITING</Link>
+              <Link to="/work/caricatures" className="text-center text-[gray] hover:text-[#fff] md:text-left">   CARICATURES</Link>
+              <Link to="/work/custom-inconography" className="text-center text-[gray] hover:text-[#fff] md:text-left">  CUSTOM ICONS</Link>
               </ul>  
         </div>
 
@@ -71,8 +73,8 @@ export default function footer() {
         </section>
 
         <div className="my-8 flex flex-col gap-2 md:flex-row justify-between md:mt-[50px]">
-          <h6 className="text-center">❤️ MADE WITH LOVE IN INDIA ❤️</h6>
-          <h6 className="text-center">👶 CHILD OF GANDHI&NERU 👶</h6>
+          <h6 className="text-center text-[14px]">❤️ MADE WITH LOVE IN INDIA ❤️</h6>
+          <h6 className="text-center text-[14px]">👶 CHILD OF GANDHI&NERU 👶</h6>
         </div>
 
       </div>
