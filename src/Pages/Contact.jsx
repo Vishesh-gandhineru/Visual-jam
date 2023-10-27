@@ -1,5 +1,6 @@
 import axios from "axios";
 import { useState } from "react";
+import TextAnimation from "../Components/TextAnimation";
 
 export default function Contact() {
   const [formSent, setFormSent] = useState(true);
@@ -55,9 +56,11 @@ const [formData, setFormData] = useState(initialFormData);
     <section className="contactUs">
       <div className="my-10 flex justify-between ">
         <div className="flex flex-col justify-between gap-5 w-[40%]">
+          <TextAnimation>
           <h1 className="font-semibold text-mob-h1 md:text-[80px] md:mt-[30px] uppercase">
             GET IN TOUCH
           </h1>
+          </TextAnimation>
           <h4 className="text-mob-h5 md:text-desk-h5">
             OFFICE HOURS
             <span className="block text-mob-p text-[#666666]">

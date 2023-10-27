@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react'
 import axios from 'axios';
 import { Link } from 'react-router-dom';
+import {motion} from "framer-motion"
 
 
 export default function WorkGrid() {
@@ -34,9 +35,14 @@ export default function WorkGrid() {
 
   return (
     <section className='WorkGrid grid md:grid-cols-2 md:gap-10 gap-4'>    
-    {Works && Works.map( (work) => {
+    {Works && Works.map( (work , i) => {
         return (
-            <div key={work.id} className=''>
+            <motion.div 
+            initial={{opacity:0 , translateY:"10px"}}
+            whileInView={{opacity:1 , translateY:0}}
+            transition={{ duration:0.3, delay: i * 0.2}}
+            viewport={{once:true}}            
+            key={work.id}>
                 <Link to={`/work/${work.slug}`}>             
                 
                 <div className='ImageHolder'>
@@ -47,7 +53,7 @@ export default function WorkGrid() {
                 {work.title.rendered}
                 </h2>                
                 </Link>
-                </div>
+                </motion.div>
         )
     })}
     </section>

@@ -1,6 +1,7 @@
 import axios from 'axios';
 import React, { useEffect, useState } from 'react'
 import { useParams } from 'react-router-dom';
+import TextAnimation from '../TextAnimation';
 
 export default function WorkSinglePage() {
 
@@ -20,7 +21,9 @@ export default function WorkSinglePage() {
     <main className=''>
         {Object.keys(Post).length ? (
             <div className='my-10'>
+                <TextAnimation>
                 <h1 className='text-center font-medium text-mob-h1 md:text-[80px] md:my-[50px]'>{Post[0].title.rendered}</h1>
+                </TextAnimation>
                 <div className='flex flex-col md:flex-row md:my-10 gap-4 md:gap-10 justify-between'>
                     <h2 className='text-center my-5 text-mob-h3 font-normal md:text-desk-h2 md:text-left md:w-[40%]'>{Post[0].meta.header_text}</h2>
                     <div className='bg-[#f8f8f8] w-full p-4 md:w-[40%] md:p-10'>
