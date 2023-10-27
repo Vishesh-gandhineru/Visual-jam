@@ -5,11 +5,13 @@ export default function Contact() {
   const [formSent, setFormSent] = useState(true);
   const [showMessage, setShowMessage] = useState(false);
 
-  const [formData, setFormData] = useState({
+  const initialFormData = {
     name: "",
     email: "",
     message: "",
-  });
+};
+
+const [formData, setFormData] = useState(initialFormData);
 
   const handleSubmit = async (event) => {
     event.preventDefault();
@@ -31,6 +33,7 @@ export default function Contact() {
       console.log(response.data);
       if (response.data.success === true) {
         setFormSent(true);
+        setFormData(initialFormData);
       } else {
         setFormData(false);
       }
@@ -74,7 +77,7 @@ export default function Contact() {
               name="name"
               id="your-name"
               placeholder="Your Name"
-              value={formData["your-name"]}
+              value={formData.name}
               onChange={handleChange}
               className="bg-[#f8f8f8] w-full p-4 placeholder:text-[#666] font-semibold"
             />
@@ -83,7 +86,7 @@ export default function Contact() {
               name="email"
               id="your-email"
               placeholder="Your Email"
-              value={formData["your-email"]}
+              value={formData.email}
               onChange={handleChange}
               className="bg-[#f8f8f8] w-full p-4 placeholder:text-[#666] font-semibold"
             />
@@ -91,7 +94,7 @@ export default function Contact() {
               name="message"
               id="your-message"
               placeholder="Your Message"
-              value={formData["your-message"]}
+              value={formData.message}
               onChange={handleChange}
               className="bg-[#f8f8f8] w-full p-4 placeholder:text-[#666] font-semibold"
             />
