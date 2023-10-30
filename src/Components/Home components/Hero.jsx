@@ -5,13 +5,13 @@ export default function Hero() {
     <section className="HomeSection my-5">
       <TextAnimation>
       <h1       
-        className="text-[30px] md:text-desk-h1 font-semibold uppercase tracking-wider"
+        className="text-[26px] md:text-desk-h1 font-semibold uppercase tracking-wider"
       >
         A VISUAL DESIGN STUDIO DRIVEN TO CREATE UNIQUE ARTWORK FOR ALL YOUR
         CREATIVE NEEDS.
       </h1>
       </TextAnimation>
-      <div className="marquee my-3 md:my-5 ">
+      <div className="marquee my-3 md:my-5 md:mx-[-36px] mx-[-23px]">
         <div>
           <span>
             PHOTO COMPOSITING · CARICATURES · CUSTOM ICONS · CUSTOM

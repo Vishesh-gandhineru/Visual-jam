@@ -33,12 +33,12 @@
 position: relative;
 }
 .WorkImagehover {
-    border: 0px #01adef solid ;
+    border: 0px #fff solid ;
     transition: all 0.2s ease-in-out;
     position: relative;
 }
 .WorkImagehover:hover {
-    border: 15px #01adef solid ;
+    border: 15px #fff solid ;
     transition: all 0.2s ease-in-out;
 }
 

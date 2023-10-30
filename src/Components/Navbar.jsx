@@ -42,7 +42,7 @@ export default function Header() {
                 <Link to="/work" className="font-normal uppercase text-[14px] tracking-wider">Our work</Link>
                 <Link to="/our-team" className="font-normal uppercase text-[14px] tracking-wider ">Our crew</Link>
                 <Link to="/contact-us" className="font-normal uppercase text-[14px] tracking-wider">Email us</Link>
-                <button className='text-[14px] bg-[#01adef] p-3 text-[#fff] font-normal upprecase' >  Book a call</button>
+                <button className='text-[14px] bg-[#01adef] p-3 text-[#fff] font-normal uppercase' >  Book a call</button>
             </nav>
 
             
@@ -59,7 +59,7 @@ export default function Header() {
                 <Link to="/work" className="block text-xs text-center tracking-[2px] text-white uppercase font-light" onClick={handelNav}>Our Work</Link>
                 <Link to="/our-team" className="block text-xs text-center text-white  uppercase font-light" onClick={handelNav}>Our crew</Link>
                 <Link to="/contact-us" className="block text-xs text-center text-white uppercase font-light" onClick={handelNav}>Email us</Link>
-                <button className='uppercase w-full text-xs bg-[#01adef] p-3 text-white font-light' onClick={handelNav} >  Book a call</button>
+                <button className='uppercase w-full text-xs bg-[#01adef] p-3 text-white font-light uppercase' onClick={handelNav} >  Book a call</button>
    
             </div>
         )}
