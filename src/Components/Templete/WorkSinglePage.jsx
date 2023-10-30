@@ -3,6 +3,8 @@ import React, { useEffect, useState } from 'react'
 import { useParams } from 'react-router-dom';
 import TextAnimation from '../TextAnimation';
 import { Helmet } from 'react-helmet';
+import { DotLottiePlayer } from '@dotlottie/react-player';
+import '@dotlottie/react-player/dist/index.css';
 
 export default function WorkSinglePage() {
 
@@ -53,10 +55,18 @@ export default function WorkSinglePage() {
 
             </div>
 
-        ) : ("Loading...") 
+        ) : (<DotLottiePlayer
+            src="/Loading.lottie"
+            autoplay
+            loop
+            className='w-[30%] m-auto'
+          >
+            
+          </DotLottiePlayer>) 
         
         }
         
+
     </main>
     )
 }

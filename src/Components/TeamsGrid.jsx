@@ -32,7 +32,6 @@ export default function TeamsGrid() {
 
     },[]) 
 
-    console.log(Teams)
   return (
     <section className='WorkGrid grid md:grid-cols-3 md:gap-10 gap-4'>    
     {Teams && Teams.map( (work) => {
