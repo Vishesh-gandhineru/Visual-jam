@@ -17,7 +17,7 @@ export default function Services() {
             OUR SERVICES
           </motion.h2>
           <div className="meetOur flex flex-col md:flex-row justify-center items-center">
-            <img src="/public/meetTeam.svg" className="w-[40%] m-auto" />
+            <img src="/meetTeam.svg" className="w-[40%] m-auto" />
             <Link
               to="our-team"
               className="bg-[#0099ff] text-[#fff] p-3 rounded uppercase font-bold"
@@ -29,49 +29,49 @@ export default function Services() {
         </div>
         <div className="serviceSection my-5 w-full md:w-[45%] flex flex-col gap-10 relative">
           <Iconbox
-            icon="/public/Custom Illustration.png"
+            icon="/Custom Illustration.png"
             title="CUSTOM ILLUSTRATIONS"
             content="Transforming your imaginations & dreams into stunning artwork."
             link="/work/custom-illustrations"
           />
 
           <Iconbox
-            icon="/public/Book Covers.png"
+            icon="/Book Covers.png"
             title="BOOK COVERS"
             content="People judge the book by the cover and we make sure they are impressed!"
             link="/work/book-covers"
           />
 
           <Iconbox
-            icon="/public/Photo Compositing.png"
+            icon="/Photo Compositing.png"
             title="PHOTO COMPOSITING"
             content="Seamless blending images to create magical artwork."
             link="/work/compositing"
           />
 
           <Iconbox
-            icon="/public/Caricature.png"
+            icon="/Caricature.png"
             title="CARICATURES"
             content="Capture the essence of the subject playfully, with a hint of exaggeration."
             link="/work/caricatures"
           />
 
           <Iconbox
-            icon="/public/Custom Icons.png"
+            icon="/Custom Icons.png"
             title="CUSTOM ICONS"
             content="Distilling complex ideas into attractive symbols that you won't find anywhere else."
             link="/work/custom-inconography"
           />
 
           <Iconbox
-            icon="/public/Celebration Cards.png"
+            icon="/Celebration Cards.png"
             title="CELEBRATION CARDS"
             content="Distilling complex ideas into attractive symbols that you won't find anywhere else."
             link="/work/celebration-cards"
           />
 
           <Iconbox
-            icon="/public/Doodle Art.png"
+            icon="/Doodle Art.png"
             title="DOODLE ART"
             content="Distilling complex ideas into attractive symbols that you won't find anywhere else."
             link="/work/doodle-art"

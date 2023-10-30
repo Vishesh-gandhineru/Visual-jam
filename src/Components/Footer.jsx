@@ -140,7 +140,7 @@ useEffect(() => {
 
       <a href="#" className="fixed bottom-10">
         <motion.img
-          src="public\Whatsapp Butoon.png"
+          src="/Whatsapp Butoon.png"
           className="w-[8%]"
           initial = {{rotate:0}}
           animate = {{rotate : scrollPosition / 6 }}
