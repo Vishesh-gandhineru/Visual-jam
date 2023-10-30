@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 import { useEffect , useState } from "react";
 
-export default function footer() {
+export default function Footer() {
 
   const [scrollPosition, setScrollPosition] = useState(0);
 const handleScroll = () => {

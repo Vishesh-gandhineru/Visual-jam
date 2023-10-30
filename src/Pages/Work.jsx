@@ -1,10 +1,15 @@
 import WorkGrid from "../Components/WorkGrid";
 import { motion } from "framer-motion";
 import TextAnimation from "../Components/TextAnimation";
+import { Helmet } from "react-helmet";
 
 export default function Work() {
   return (
     <main>
+      <Helmet>
+                <meta charSet="utf-8" />
+                <title>Our Work</title>
+            </Helmet>
       <section className="my-[50px]">
         <div className="WorktitleSection mb-2 md:mb-20 ">
           <TextAnimation>

@@ -1,6 +1,7 @@
 import axios from "axios";
 import { useState } from "react";
 import TextAnimation from "../Components/TextAnimation";
+import {Helmet} from "react-helmet";
 
 export default function Contact() {
   const [formSent, setFormSent] = useState(true);
@@ -54,6 +55,10 @@ const [formData, setFormData] = useState(initialFormData);
 
   return (
     <section className="contactUs">
+      <Helmet>
+                <meta charSet="utf-8" />
+                <title>Contact Us</title>
+            </Helmet>
       <div className="my-10 flex flex-col md:flex-row justify-between ">
         <div className="flex flex-col justify-between gap-5 md:w-[40%]">
           <TextAnimation>
