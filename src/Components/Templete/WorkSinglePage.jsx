@@ -3,8 +3,7 @@ import React, { useEffect, useState } from 'react'
 import { useParams } from 'react-router-dom';
 import TextAnimation from '../TextAnimation';
 import { Helmet } from 'react-helmet';
-import { DotLottiePlayer } from '@dotlottie/react-player';
-import '@dotlottie/react-player/dist/index.css';
+
 
 export default function WorkSinglePage() {
 
@@ -20,7 +19,7 @@ export default function WorkSinglePage() {
         })
     },[slug])
  
-    const PostName =Object.keys(Post).length ? ( Post[0].title.rendered) : "Visual Jam" ;
+    const PostName = Object.keys(Post).length ? ( Post[0].title.rendered) : "Visual Jam" ;
 
   return (
         
@@ -55,18 +54,13 @@ export default function WorkSinglePage() {
 
             </div>
 
-        ) : (<DotLottiePlayer
-            src="/Loading.lottie"
-            autoplay
-            loop
-            className='w-[30%] m-auto'
-          >
-            
-          </DotLottiePlayer>) 
+        ) : ( <div className="animated-background h-[300px] my-[50px]">
+        <div className="background-masker btn-divide-left"></div>
+      </div>) 
         
         }
         
-
+       
     </main>
     )
 }
