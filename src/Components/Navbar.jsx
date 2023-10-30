@@ -32,7 +32,7 @@ export default function Header() {
             {/* Logo */}
             <div>
                <Link to="/">
-               <img src="/logo.svg" alt="Logo" className="h-8" />
+               <img src="/public/logo.svg" alt="Logo" className="h-8" />
                </Link> 
             </div>
 

@@ -48,7 +48,7 @@ useEffect(() => {
         </div>
         <section className="flex flex-col md:flex-row justify-between">
           <div className="my-10 flex flex-row  items-center justify-center gap-4">
-            <img src="/logo white.svg" alt="Logo" className="h-8" />
+            <img src="/logowhite.svg" alt="Logo" className="h-8" />
             <div style={{ display: "contents" }}>
               <svg
                 xmlns="http://www.w3.org/2000/svg"
