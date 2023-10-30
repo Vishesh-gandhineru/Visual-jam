@@ -42,7 +42,7 @@ useEffect(() => {
           <h2 className="text-[50px] md:text-[80px] font-semibold text-center">
             LET'S JAM
           </h2>
-          <button className="text-[14px] bg-[#01adef] p-3 text-[#fff] font-normal upprecase w-fit">
+          <button className="text-[14px] bg-[#01adef] p-3 text-[#fff] font-normal uppercase w-fit">
             Book a call
           </button>
         </div>
