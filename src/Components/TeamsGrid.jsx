@@ -40,7 +40,7 @@ export default function TeamsGrid() {
             <div key={work.id} className=''>                         
                 
                 <div>
-                    <img src={work.meta.profile_image.url} alt="" className='w-full h-[400px] md:h-[400px] object-contain object-center' />
+                    <img src={work.meta.profile_image.url} alt="" className='w-full h-full md:h-[400px] object-contain object-center' />
                 </div>
                 
                 <h2 className='font-medium text-mob-h2 tracking-wider text-center' >

@@ -12,7 +12,7 @@ export default function Services() {
             whileInView={{ opacity: 1, translateY: 0 }}
             transition={{ duration: 0.8 }}        
 
-            className=" sticky top-10 mb-[250px]  text-mob-h2 md:text-[60px] uppercase font-semibold text-center md:text-left tracking-wider"
+            className=" md:sticky top-10 md:mb-[250px] mb-3  text-mob-h2 md:text-[60px] uppercase font-semibold text-center md:text-left tracking-wider"
           >
             OUR SERVICES
           </motion.h2>

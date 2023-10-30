@@ -46,10 +46,10 @@ export default function WorkGrid() {
                 <Link to={`/work/${work.slug}`}>             
                 
                 <div className='ImageHolder'>
-                    <img src={work.meta.cover_image.url} alt="" className='WorkImagehover w-full h-[400px] md:h-[600px] object-cover object-center' />
+                    <img src={work.meta.cover_image.url} alt="" className='WorkImagehover w-full h-[300px] md:h-[600px] object-cover object-center' />
                 </div>
                 
-                <h2 className='font-normal text-mob-h2 mt-5 tracking-wider' >
+                <h2 className='font-normal text-mob-h5 md:text-mob-h2 mt-5 tracking-wider text-center md:text-left' >
                 {work.title.rendered}
                 </h2>                
                 </Link>

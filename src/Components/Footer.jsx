@@ -48,7 +48,7 @@ useEffect(() => {
         </div>
         <section className="flex flex-col md:flex-row justify-between">
           <div className="my-10 flex flex-row  items-center justify-center gap-4">
-            <img src="/public/logo white.svg" alt="Logo" className="h-8" />
+            <img src="/logo white.svg" alt="Logo" className="h-8" />
             <div style={{ display: "contents" }}>
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -78,35 +78,34 @@ useEffect(() => {
                   to="/work/custom-illustrations"
                   className="text-center text-[gray] hover:text-[#fff] md:text-left"
                 >
-                  {" "}
+                
                   CUSTOM ILLUSTRATIONS
                 </Link>
                 <Link
                   to="/work/book-covers"
                   className="text-center text-[gray] hover:text-[#fff] md:text-left"
                 >
-                  {" "}
+                  
                   BOOK COVERS
                 </Link>
                 <Link
                   to="/work/compositing"
                   className="text-center text-[gray] hover:text-[#fff] md:text-left"
                 >
-                  {" "}
+                  
                   PHOTO COMPOSITING
                 </Link>
                 <Link
                   to="/work/caricatures"
                   className="text-center text-[gray] hover:text-[#fff] md:text-left"
                 >
-                  {" "}
                   CARICATURES
                 </Link>
                 <Link
                   to="/work/custom-inconography"
                   className="text-center text-[gray] hover:text-[#fff] md:text-left"
                 >
-                  {" "}
+                  
                   CUSTOM ICONS
                 </Link>
               </ul>
@@ -141,7 +140,7 @@ useEffect(() => {
       <a href="#" className="fixed bottom-10">
         <motion.img
           src="/Whatsapp Butoon.png"
-          className="w-[8%]"
+          className="w-[80px] md:w-[110px] "
           initial = {{rotate:0}}
           animate = {{rotate : scrollPosition / 6 }}
           transition={{duration:0.5}}

@@ -7,6 +7,10 @@ export default function Header() {
     const [isSticky, setIsSticky] = useState(false);
 
 
+    const handelNav = () => {
+        setIsOpen (!isOpen)
+    }
+
     useEffect(() => {
         const handleScroll = () => {
             if (window.scrollY > 0) {
@@ -51,11 +55,11 @@ export default function Header() {
 
         {/* Mobile Nav */}
         {isOpen && (
-            <div className="mobileNav md:hidden container mx-auto mt-4 space-y-4 bg-black px-4 py-5">
-                <Link to="/work" className="block text-xs text-center tracking-[2px] text-white uppercase font-light">Our Work</Link>
-                <Link to="/our-team" className="block text-xs text-center text-white  uppercase font-light">Our crew</Link>
-                <Link to="/contact-us" className="block text-xs text-center text-white uppercase font-light">Email us</Link>
-                <button className='uppercase w-full text-xs bg-[#01adef] p-3 text-white font-light' >  Book a call</button>
+            <div className="mobileNav md:hidden container mx-auto mt-4 space-y-4 bg-[#000] text-[white] px-4 py-5">
+                <Link to="/work" className="block text-xs text-center tracking-[2px] text-white uppercase font-light" onClick={handelNav}>Our Work</Link>
+                <Link to="/our-team" className="block text-xs text-center text-white  uppercase font-light" onClick={handelNav}>Our crew</Link>
+                <Link to="/contact-us" className="block text-xs text-center text-white uppercase font-light" onClick={handelNav}>Email us</Link>
+                <button className='uppercase w-full text-xs bg-[#01adef] p-3 text-white font-light' onClick={handelNav} >  Book a call</button>
    
             </div>
         )}

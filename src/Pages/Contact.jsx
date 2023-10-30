@@ -54,8 +54,8 @@ const [formData, setFormData] = useState(initialFormData);
 
   return (
     <section className="contactUs">
-      <div className="my-10 flex justify-between ">
-        <div className="flex flex-col justify-between gap-5 w-[40%]">
+      <div className="my-10 flex flex-col md:flex-row justify-between ">
+        <div className="flex flex-col justify-between gap-5 md:w-[40%]">
           <TextAnimation>
           <h1 className="font-semibold text-mob-h1 md:text-[80px] md:mt-[30px] uppercase">
             GET IN TOUCH
@@ -70,7 +70,7 @@ const [formData, setFormData] = useState(initialFormData);
           </h4>
         </div>
 
-        <div className="ContactForm my-10 w-1/2">
+        <div className="ContactForm my-10 md:w-1/2">
           <form
             className="flex flex-col gap-4 items-center md:gap-8"
             onSubmit={handleSubmit}
@@ -121,7 +121,7 @@ const [formData, setFormData] = useState(initialFormData);
         </div>
       </div>
       <div className="bg-color-blue md:mx-[-36px] mx-[-23px] text-[white] p-7 flex justify-between items-center">
-        <h3 className="uppercase text-mob-h1">FOllow us</h3>
+        <h3 className="uppercase text-mob-h4 md:text-mob-h2">FOllow us</h3>
         <a href="#">LINKEDIN</a>
       </div>
     </section>
